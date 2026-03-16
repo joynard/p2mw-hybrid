@@ -1,26 +1,55 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>TravelerHub</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <div class="welcome-header">
+    <div class="text-group">
+      <p class="greeting">Halo, SOBAT!</p>
+      <h1 class="main-title">Mau kemana hari ini?</h1>
+    </div>
+    <div class="profile-thumb" routerLink="/tabs/profile">
+      <img src="https://ui-avatars.com/api/?name=User&background=0abab5&color=fff" alt="avatar" />
+    </div>
+  </div>
 
-  <ion-card routerLink="/jastip-list">
+  <ion-searchbar placeholder="Cari jastip atau kota..." class="amigo-search"></ion-searchbar>
+
+  <div class="promo-banner">
+    <div class="promo-content">
+      <span>DISKON 20%</span>
+      <p>Jastip Jepang Pertama Kamu!</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Layanan Kami</h2>
+  <div class="service-grid">
+    <div class="service-card" routerLink="/tabs/jastip-list">
+      <div class="icon-box cyan">
+        <ion-icon name="bag-handle"></ion-icon>
+      </div>
+      <h3>Jastip</h3>
+      <p>Titip barang favoritmu</p>
+    </div>
+
+    <div class="service-card" routerLink="/tabs/guide-list">
+      <div class="icon-box orange">
+        <ion-icon name="map"></ion-icon>
+      </div>
+      <h3>Local Guide</h3>
+      <p>Eksplor bareng maba</p>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <h2 class="section-title">Lagi Ramai</h2>
+    <span class="see-all">Lihat Semua</span>
+  </div>
+
+  <ion-card class="trending-card">
+    <img alt="Silhouette of mountains" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=400&auto=format&fit=crop" />
     <ion-card-header>
-      <ion-card-title>Jasa Titip</ion-card-title>
+      <ion-card-subtitle>Traveler ke Tokyo</ion-card-subtitle>
+      <ion-card-title>Budi - Univ. Surabaya</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Titip beli barang dari luar kota atau luar negeri
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card routerLink="/guide-list">
-    <ion-card-header>
-      <ion-card-title>Local Guide</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Jelajahi kota bersama mahasiswa lokal
+      Buka jastip KitKat Matcha & Skincare Jepang. Berangkat 20 Maret!
     </ion-card-content>
   </ion-card>
 

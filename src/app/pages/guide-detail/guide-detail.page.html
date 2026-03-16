@@ -1,22 +1,72 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Detail Guide</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="hero-header">
+    <ion-buttons slot="start" class="back-btn-overlay">
+      <ion-back-button defaultHref="/tabs/guide-list" text="" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <img src="https://images.unsplash.com/photo-1527853787696-f7be74f2e3ee?q=80&w=600&auto=format&fit=crop" alt="Bandung" />
+  </div>
 
-<ion-content class="ion-padding">
+  <div class="main-content">
+    <div class="profile-section">
+      <ion-avatar class="main-avatar">
+        <img src="https://ui-avatars.com/api/?name=Andi+Pratama&background=0abab5&color=fff&size=128" />
+      </ion-avatar>
+      <div class="title-row">
+        <h1 class="guide-name">Andi Pratama</h1>
+        <div class="rating-tag">
+          <ion-icon name="star"></ion-icon> 4.8 (12 Review)
+        </div>
+      </div>
+      <p class="uni-name">Institut Teknologi Bandung • Teknik Sipil</p>
+    </div>
 
-  <h2>Andi - Bandung</h2>
+    <div class="stats-row">
+      <div class="stat-box">
+        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        <span>Sunda, Indo, EN</span>
+      </div>
+      <div class="stat-box">
+        <ion-icon name="camera-outline"></ion-icon>
+        <span>Photowalk</span>
+      </div>
+      <div class="stat-box">
+        <ion-icon name="shield-checkmark-outline"></ion-icon>
+        <span>Verified</span>
+      </div>
+    </div>
 
-  <p>
-    Mahasiswa lokal yang bisa menemani city walk,
-    photowalk, dan wisata kuliner.
-  </p>
+    <h3 class="section-title">Tentang Saya</h3>
+    <p class="bio-text">
+      Halo Amigos! Saya mahasiswa tingkat akhir di ITB yang hobi eksplor sisi tersembunyi Bandung. 
+      Bisa bantu kamu cari spot foto estetik, kopi enak, sampai kuliner legendaris yang nggak masuk Google Maps!
+    </p>
 
-  <p>Harga: Rp100.000 / hari</p>
-
-  <ion-button expand="block" routerLink="/booking">
-    Booking Guide
-  </ion-button>
-
+    <h3 class="section-title">Paket Sudah Termasuk</h3>
+    <ion-list lines="none" class="feature-list">
+      <ion-item>
+        <ion-icon name="checkmark-circle" slot="start" color="success"></ion-icon>
+        <ion-label>Dokumentasi foto (HP/Mirrorless)</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="checkmark-circle" slot="start" color="success"></ion-icon>
+        <ion-label>Rekomendasi Itinerary fleksibel</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="close-circle" slot="start" color="danger"></ion-icon>
+        <ion-label>Biaya makan & transportasi (Exclude)</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <div class="footer-container ion-padding">
+    <div class="price-info">
+      <span class="label">Harga mulai dari</span>
+      <span class="price">Rp 100.000 <small>/hari</small></span>
+    </div>
+    <ion-button expand="block" class="booking-btn" routerLink="/booking">
+      Pesan Sekarang
+    </ion-button>
+  </div>
+</ion-footer>

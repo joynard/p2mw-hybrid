@@ -1,23 +1,72 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Detail Jastip</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="product-banner">
+    <ion-buttons slot="start" class="back-btn-overlay">
+      <ion-back-button defaultHref="/tabs/jastip-list" text="" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <img src="https://images.unsplash.com/photo-1526316122537-29994199d2a1?q=80&w=600&auto=format&fit=crop" alt="Jepang" />
+  </div>
 
-<ion-content class="ion-padding">
+  <div class="content-container ion-padding">
+    <div class="title-section">
+      <div class="badge-country">Jepang 🇯🇵</div>
+      <h1 class="trip-title">Jastip Tokyo - Osaka Special</h1>
+      <p class="trip-date">
+        <ion-icon name="calendar-outline"></ion-icon> Berangkat: 20 Mar 2026
+      </p>
+    </div>
 
-  <h2>Jastip Jepang 🇯🇵</h2>
+    <div class="provider-card">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="https://ui-avatars.com/api/?name=Budi+Setiawan&background=0abab5&color=fff" />
+        </ion-avatar>
+        <ion-label>
+          <h2>Budi Setiawan</h2>
+          <p>Universitas Surabaya (UBAYA)</p>
+        </ion-label>
+        <div class="rating-badge">
+          <ion-icon name="star"></ion-icon> 4.9
+        </div>
+      </ion-item>
+    </div>
 
-  <p>Berangkat: 10 Juli</p>
-  <p>Fee: Rp50.000</p>
+    <div class="info-grid">
+      <div class="info-item">
+        <span class="label">Estimasi Fee</span>
+        <span class="value">Mulai Rp 50rb</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Sisa Kuota</span>
+        <span class="value">5 Slot</span>
+      </div>
+    </div>
 
-  <ion-item>
-    <ion-label position="floating">Barang yang dititip</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <h3 class="section-title">Request Barang</h3>
+    <p class="description-text">
+      Terima titipan Skincare (Biore, Hada Labo), Snack (KitKat, Tokyo Banana), 
+      dan Merchandise Anime. Silakan tulis detail barang di bawah.
+    </p>
 
-  <ion-button expand="block" routerLink="/booking">
-    Titip Sekarang
-  </ion-button>
-
+    <div class="request-form">
+      <ion-item lines="none" class="amigo-input-group">
+        <ion-textarea 
+          placeholder="Contoh: KitKat Matcha 2 Pack, Hada Labo Lotion 1 botol..." 
+          [autoGrow]="true" 
+          rows="3">
+        </ion-textarea>
+      </ion-item>
+    </div>
+  </div>
 </ion-content>
+
+<ion-footer class="ion-no-border">
+  <div class="footer-action ion-padding">
+    <div class="price-summary">
+      <span class="total-label">Biaya Jasa</span>
+      <span class="total-price">Rp 50.000 <small>/barang</small></span>
+    </div>
+    <ion-button expand="block" class="cta-button" routerLink="/booking">
+      Titip Sekarang
+    </ion-button>
+  </div>
+</ion-footer>

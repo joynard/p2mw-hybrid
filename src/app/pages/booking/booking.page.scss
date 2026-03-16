@@ -1,0 +1,93 @@
+$amigo-primary: #0abab5;
+$text-dark: #333333;
+$text-light: #888888;
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #{$text-dark};
+  font-weight: 700;
+}
+
+.booking-summary-card {
+  background: #f8f9f9;
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #eee;
+
+  .summary-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: $amigo-primary;
+    h3 { font-size: 1rem; font-weight: 700; margin: 0; color: $text-dark; }
+  }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    .label { color: $text-light; }
+    .value { color: $text-dark; font-weight: 600; }
+  }
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $text-dark;
+  margin: 20px 0 10px;
+}
+
+.amigo-input {
+  background: #f5f5f5;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  --padding-start: 10px;
+  
+  ion-icon { color: $amigo-primary; margin-top: 10px; }
+  ion-label { font-weight: 600; color: $text-light; }
+}
+
+.invoice-box {
+  background: #ffffff;
+  border: 1px dashed #ddd;
+  border-radius: 12px;
+  padding: 15px;
+
+  .invoice-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: $text-light;
+
+    &.total {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+      color: $text-dark;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.payment-selector {
+  background: #f8f9f9;
+  border-radius: 12px;
+  border: 1px solid $amigo-primary;
+  ion-label { font-size: 0.9rem; font-weight: 600; }
+}
+
+.confirm-btn {
+  --background: #{$amigo-primary};
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(10, 186, 181, 0.2);
+  margin-top: 30px;
+  height: 55px;
+  font-weight: 700;
+  text-transform: none;
+}

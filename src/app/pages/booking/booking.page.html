@@ -1,23 +1,76 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Booking</ion-title>
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/home" icon="chevron-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Konfirmasi Pesanan</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
+  <div class="booking-summary-card">
+    <div class="summary-header">
+      <ion-icon name="receipt-outline"></ion-icon>
+      <h3>Ringkasan Layanan</h3>
+    </div>
+    <div class="summary-body">
+      <div class="info-row">
+        <span class="label">Layanan</span>
+        <span class="value">Local Guide - Bandung</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Penyedia</span>
+        <span class="value">Andi Pratama (ITB)</span>
+      </div>
+    </div>
+  </div>
 
-  <ion-item>
-    <ion-label>Tanggal</ion-label>
-    <ion-datetime></ion-datetime>
-  </ion-item>
+  <h3 class="section-title">Detail Waktu & Peserta</h3>
+  <div class="input-group">
+    <ion-item lines="none" class="amigo-input">
+      <ion-icon name="calendar-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Pilih Tanggal</ion-label>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="datetime" presentation="date"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Jumlah Orang</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
+    <ion-item lines="none" class="amigo-input">
+      <ion-icon name="people-outline" slot="start"></ion-icon>
+      <ion-label position="stacked">Jumlah Orang</ion-label>
+      <ion-input type="number" placeholder="Contoh: 2"></ion-input>
+    </ion-item>
+  </div>
 
-  <ion-button expand="block">
-    Konfirmasi Booking
+  <h3 class="section-title">Rincian Pembayaran</h3>
+  <div class="invoice-box">
+    <div class="invoice-row">
+      <span>Biaya Layanan (1 Hari)</span>
+      <span>Rp 100.000</span>
+    </div>
+    <div class="invoice-row">
+      <span>Biaya Aplikasi</span>
+      <span>Rp 2.000</span>
+    </div>
+    <div class="invoice-row total">
+      <span>Total Bayar</span>
+      <span>Rp 102.000</span>
+    </div>
+  </div>
+
+  <div class="payment-method">
+    <h3 class="section-title">Metode Pembayaran</h3>
+    <ion-item lines="none" class="payment-selector">
+      <ion-icon name="wallet-outline" slot="start" color="primary"></ion-icon>
+      <ion-label>Amigo Wallet (Saldo: Rp 150rb)</ion-label>
+      <ion-checkbox slot="end" [checked]="true"></ion-checkbox>
+    </ion-item>
+  </div>
+
+  <ion-button expand="block" class="confirm-btn" (click)="processBooking()">
+    Bayar Sekarang
   </ion-button>
-
-</ion-content>
+</ion-content>`1

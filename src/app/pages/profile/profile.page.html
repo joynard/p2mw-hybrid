@@ -1,25 +1,60 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Profile</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <div class="profile-header">
+    <div class="avatar-wrapper">
+      <img src="https://ui-avatars.com/api/?name=User+Mahasiswa&background=0abab5&color=fff&size=128" alt="profile" />
+      <div class="badge-student">
+        <ion-icon name="checkmark-seal"></ion-icon>
+      </div>
+    </div>
+    <h1 class="user-name">Nama Mahasiswa</h1>
+    <p class="user-email">mahasiswa@univ.ac.id</p>
+    <div class="role-tag">Student Provider</div>
+  </div>
 
-  <ion-card>
+  <div class="stats-container">
+    <div class="stat-item">
+      <span class="label">Saldo</span>
+      <span class="value">Rp 150.000</span>
+    </div>
+    <div class="divider-v"></div>
+    <div class="stat-item">
+      <span class="label">Poin</span>
+      <span class="value">1,240</span>
+    </div>
+  </div>
 
-    <ion-card-header>
-      <ion-card-title>Nama Pengguna</ion-card-title>
-    </ion-card-header>
+  <div class="menu-container">
+    <h2 class="menu-title">Akun & Keamanan</h2>
+    <ion-list lines="none">
+      <ion-item button detail="true" class="amigo-menu-item">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-label>Edit Profil</ion-label>
+      </ion-item>
+      
+      <ion-item button detail="true" class="amigo-menu-item">
+        <ion-icon name="briefcase-outline" slot="start"></ion-icon>
+        <ion-label>Daftar Pesanan Jastip</ion-label>
+      </ion-item>
 
-    <ion-card-content>
-      Email: user@email.com
-    </ion-card-content>
+      <ion-item button detail="true" class="amigo-menu-item">
+        <ion-icon name="notifications-outline" slot="start"></ion-icon>
+        <ion-label>Notifikasi</ion-label>
+      </ion-item>
+    </ion-list>
 
-  </ion-card>
+    <h2 class="menu-title">Dukungan</h2>
+    <ion-list lines="none">
+      <ion-item button detail="true" class="amigo-menu-item">
+        <ion-icon name="help-circle-outline" slot="start"></ion-icon>
+        <ion-label>Pusat Bantuan</ion-label>
+      </ion-item>
+      
+      <ion-item button detail="false" class="amigo-menu-item logout" (click)="onLogout()">
+        <ion-icon name="log-out-outline" slot="start"></ion-icon>
+        <ion-label>Keluar</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
 
-  <ion-button expand="block" color="danger">
-    Logout
-  </ion-button>
-
+  <div class="app-version">Version 1.0.0 (Beta)</div>
 </ion-content>

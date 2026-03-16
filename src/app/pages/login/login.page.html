@@ -1,27 +1,41 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <div class="login-container">
+    <div class="header-section">
+      <h1 class="welcome-text">Selamat Datang,</h1>
+      <p class="subtitle">Masuk untuk mulai menjelajah dengan SOBAT</p>
+    </div>
 
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <div class="form-section">
+      <div class="custom-input-group">
+        <ion-item lines="none" class="amigo-input">
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-input type="email" placeholder="Email Mahasiswa"></ion-input>
+        </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+        <ion-item lines="none" class="amigo-input">
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        
+        <p class="forgot-password">Lupa Password?</p>
+      </div>
 
-  <ion-button expand="block" class="ion-margin-top">
-    Login
-  </ion-button>
+      <ion-button expand="block" class="login-button" (click)="onLogin()">
+        Masuk
+      </ion-button>
 
-  <ion-button expand="block" fill="clear" routerLink="/register">
-    Belum punya akun?
-  </ion-button>
+      <div class="divider">
+        <span>atau</span>
+      </div>
 
+      <ion-button expand="block" fill="outline" class="google-button">
+        <ion-icon name="logo-google" slot="start"></ion-icon>
+        Masuk dengan Google
+      </ion-button>
+    </div>
+
+    <div class="footer-section">
+      <p>Belum punya akun? <span class="register-link" routerLink="/register">Daftar Sekarang</span></p>
+    </div>
+  </div>
 </ion-content>

@@ -1,21 +1,71 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Local Guide</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <div class="page-header">
+    <h1 class="title">Temukan Teman Jalan</h1>
+    <p class="subtitle">Eksplor kota bareng mahasiswa lokal yang asyik.</p>
+  </div>
 
-  <ion-card routerLink="/guide-detail">
-    <ion-card-header>
-      <ion-card-title>Andi - Bandung</ion-card-title>
-    </ion-card-header>
+  <ion-searchbar placeholder="Cari kota (Surabaya, Bandung...)" class="amigo-search"></ion-searchbar>
 
-    <ion-card-content>
-      City Walk • Kuliner Tour
-      <br>
-      Rp100.000 / hari
-    </ion-card-content>
-  </ion-card>
+  <div class="guide-container">
+    
+    <ion-card class="guide-card" routerLink="/tabs/guide-detail">
+      <div class="guide-banner">
+        <img src="https://images.unsplash.com/photo-1527853787696-f7be74f2e3ee?q=80&w=400&auto=format&fit=crop" alt="City" />
+        <div class="price-badge">Rp 100rb<span>/hari</span></div>
+      </div>
+      
+      <div class="guide-info">
+        <ion-avatar class="guide-avatar">
+          <img src="https://ui-avatars.com/api/?name=Andi+Pratama&background=0abab5&color=fff" />
+        </ion-avatar>
+        
+        <div class="text-details">
+          <div class="name-row">
+            <h3>Andi Pratama</h3>
+            <div class="rating">
+              <ion-icon name="star"></ion-icon> 4.8
+            </div>
+          </div>
+          <p class="uni">Institut Teknologi Bandung</p>
+          <p class="location"><ion-icon name="location-outline"></ion-icon> Bandung, Jawa Barat</p>
+          
+          <div class="tags">
+            <span>Kuliner</span>
+            <span>Historical</span>
+            <span>Hidden Gem</span>
+          </div>
+        </div>
+      </div>
+    </ion-card>
 
+    <ion-card class="guide-card">
+      <div class="guide-banner">
+        <img src="https://images.unsplash.com/photo-1596402184320-417d7178b2cd?q=80&w=400&auto=format&fit=crop" alt="City" />
+        <div class="price-badge">Rp 75rb<span>/hari</span></div>
+      </div>
+      
+      <div class="guide-info">
+        <ion-avatar class="guide-avatar">
+          <img src="https://ui-avatars.com/api/?name=Siti+Aisyah&background=0abab5&color=fff" />
+        </ion-avatar>
+        
+        <div class="text-details">
+          <div class="name-row">
+            <h3>Siti Aisyah</h3>
+            <div class="rating">
+              <ion-icon name="star"></ion-icon> 5.0
+            </div>
+          </div>
+          <p class="uni">Universitas Surabaya</p>
+          <p class="location"><ion-icon name="location-outline"></ion-icon> Surabaya, Jawa Timur</p>
+          
+          <div class="tags">
+            <span>Shopping</span>
+            <span>Cafe Hopping</span>
+          </div>
+        </div>
+      </div>
+    </ion-card>
+
+  </div>
 </ion-content>

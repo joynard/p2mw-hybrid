@@ -1,28 +1,55 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Register</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <div class="register-container">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login" text="" icon="chevron-back-outline"></ion-back-button>
+    </ion-buttons>
 
-  <ion-item>
-    <ion-label position="floating">Nama</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <div class="header-section">
+      <h1 class="title">Buat Akun</h1>
+      <p class="subtitle">Bergabunglah dengan komunitas traveler mahasiswa terbesar.</p>
+    </div>
 
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+    <div class="form-section">
+      <p class="section-label">Daftar sebagai:</p>
+      <div class="role-selection">
+        <div class="role-card active">
+          <ion-icon name="person-outline"></ion-icon>
+          <span>Traveler</span>
+        </div>
+        <div class="role-card">
+          <ion-icon name="school-outline"></ion-icon>
+          <span>Mahasiswa</span>
+        </div>
+      </div>
 
-  <ion-item>
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+      <div class="custom-input-group">
+        <ion-item lines="none" class="amigo-input">
+          <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+          <ion-input type="text" placeholder="Nama Lengkap"></ion-input>
+        </ion-item>
 
-  <ion-button expand="block" class="ion-margin-top">
-    Daftar
-  </ion-button>
+        <ion-item lines="none" class="amigo-input">
+          <ion-icon name="mail-outline" slot="start"></ion-icon>
+          <ion-input type="email" placeholder="Email (Gunakan Email Kampus)"></ion-input>
+        </ion-item>
 
+        <ion-item lines="none" class="amigo-input">
+          <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+      </div>
+
+      <p class="terms-text">
+        Dengan mendaftar, Anda menyetujui <span>Syarat & Ketentuan</span> AMIGO.
+      </p>
+
+      <ion-button expand="block" class="register-button">
+        Daftar Sekarang
+      </ion-button>
+    </div>
+
+    <div class="footer-section">
+      <p>Sudah punya akun? <span class="login-link" routerLink="/login">Masuk</span></p>
+    </div>
+  </div>
 </ion-content>

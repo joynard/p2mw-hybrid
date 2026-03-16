@@ -1,11 +1,93 @@
-.splash {
+// Tentukan Warna Utama (Primary Accent)
+$amigo-primary: #0abab5; // Teal yang modern dan bersih (Tidak Norak)
+$text-dark: #333333;
+$text-light: #888888;
+$background: #ffffff; // Putih Bersih (Profesional)
+
+.splash-content {
+  background: $background;
+}
+
+.splash-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 30px;
 }
 
-.logo-container h1 {
-  font-size: 28px;
-  font-weight: bold;
+.logo-wrapper {
+  text-align: center;
+  animation: scaleUp 1s ease-out; // Animasi skala yang halus
+}
+
+.icon-amigo {
+  display: inline-flex;
+  margin-bottom: 15px;
+  animation: pulseColor 2s infinite; // Animasi denyut warna
+
+  ion-icon {
+    font-size: 80px;
+    color: $amigo-primary;
+  }
+}
+
+.brand-name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: $text-dark;
+  letter-spacing: 6px; // Spasi huruf untuk kesan premium
+  margin: 0;
+  text-transform: uppercase; // Huruf besar semua
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $text-light;
+  margin-top: 5px;
+  letter-spacing: 1.5px;
+}
+
+.loading-bar-container {
+  position: absolute;
+  bottom: 80px;
+  width: 150px;
+  height: 4px;
+  background: #f0f0f0;
+  border-radius: 2px;
+  overflow: hidden;
+
+  .loading-bar {
+    height: 100%;
+    width: 0;
+    background: $amigo-primary;
+    border-radius: 2px;
+    animation: loadingAnimate 2.5s ease-out forwards; // Animasi loading
+  }
+}
+
+// ---- Animasi ---- //
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseColor {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes loadingAnimate {
+  0% { width: 0%; }
+  100% { width: 100%; }
 }

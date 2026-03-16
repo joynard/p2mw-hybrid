@@ -1,33 +1,63 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Jastip</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
+  <div class="page-header">
+    <h1 class="title">Eksplor Jastip</h1>
+    <p class="subtitle">Temukan mahasiswa yang sedang traveling</p>
+  </div>
 
-  <ion-card routerLink="/jastip-detail">
-    <ion-card-header>
-      <ion-card-title>Jastip Jepang 🇯🇵</ion-card-title>
-    </ion-card-header>
+  <div class="category-scroll">
+    <div class="chip active">Semua</div>
+    <div class="chip">Internasional</div>
+    <div class="chip">Domestik</div>
+    <div class="chip">Snack</div>
+  </div>
 
-    <ion-card-content>
-      Berangkat: 10 Juli
-      <br>
-      Fee: Rp50.000
-    </ion-card-content>
-  </ion-card>
+  <div class="list-container">
+    
+    <ion-card class="amigo-jastip-card" routerLink="/tabs/jastip-detail">
+      <div class="card-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1526316122537-29994199d2a1?q=80&w=400&auto=format&fit=crop" alt="Jepang" />
+        <div class="badge-overlay">Internasional</div>
+      </div>
+      <ion-card-header>
+        <div class="country-tag">Jepang 🇯🇵</div>
+        <ion-card-title>Tokyo - Osaka Special</ion-card-title>
+        <ion-card-subtitle>Oleh: Budi (Univ. Surabaya)</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="info-footer">
+          <div class="info-block">
+            <ion-icon name="calendar-clear-outline"></ion-icon>
+            <span>20 Mar</span>
+          </div>
+          <div class="info-block fee">
+            <span>Fee Rp50rb</span>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Jastip Korea 🇰🇷</ion-card-title>
-    </ion-card-header>
+    <ion-card class="amigo-jastip-card">
+      <div class="card-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?q=80&w=400&auto=format&fit=crop" alt="Korea" />
+        <div class="badge-overlay">Internasional</div>
+      </div>
+      <ion-card-header>
+        <div class="country-tag">Korea 🇰🇷</div>
+        <ion-card-title>Seoul & Incheon Trip</ion-card-title>
+        <ion-card-subtitle>Oleh: Siti (Univ. Surabaya)</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="info-footer">
+          <div class="info-block">
+            <ion-icon name="calendar-clear-outline"></ion-icon>
+            <span>25 Mar</span>
+          </div>
+          <div class="info-block fee">
+            <span>Fee Rp40rb</span>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
 
-    <ion-card-content>
-      Berangkat: 15 Juli
-      <br>
-      Fee: Rp40.000
-    </ion-card-content>
-  </ion-card>
-
+  </div>
 </ion-content>
