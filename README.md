@@ -58,6 +58,22 @@ Ensure you have [Node.js](https://nodejs.org/) and [Ionic CLI](https://ionicfram
    ionic serve
    ```
 
+## 📱 User Interface (Screenshots)
+
+Here are some user interface (UI) screenshots of the JASTRIP application. You can add the image links below:
+
+| Splash Screen | Login Page | Register Page |
+| :---: | :---: | :---: |
+| ![Splash Screen](assets/screenshots/splash.png) | ![Login Page](assets/screenshots/login.png) | ![Register Page](assets/screenshots/register.png) |
+
+| Home Dashboard | Jastip List | Guide List |
+| :---: | :---: | :---: |
+| ![Home Dashboard](assets/screenshots/home.png) | ![Jastip List](assets/screenshots/jastip-list.png) | ![Guide List](assets/screenshots/guide-list.png) |
+
+| Detail Page | Booking Page | Profile Page |
+| :---: | :---: | :---: |
+| ![Detail Page](assets/screenshots/detail.png) | ![Booking Page](assets/screenshots/booking.png) | ![Profile Page](assets/screenshots/profile.png) |
+
 ## 📈 P2MW Context
 
 This project is part of the **P2MW (Program Pembinaan Mahasiswa Wirausaha)** initiative, aimed at fostering an entrepreneurial spirit among university students in Indonesia. JASTRIP focuses on the efficiency of personal logistics services and empowering students as professional service providers.

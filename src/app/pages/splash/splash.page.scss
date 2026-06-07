@@ -1,11 +1,11 @@
-// Tentukan Warna Utama (Primary Accent)
-$amigo-primary: #0abab5; // Teal yang modern dan bersih (Tidak Norak)
-$text-dark: #333333;
-$text-light: #888888;
-$background: #ffffff; // Putih Bersih (Profesional)
+$amigo-primary: #0abab5;
+$amigo-primary-glow: rgba(10, 186, 181, 0.4);
 
 .splash-content {
-  background: $background;
+  --background: radial-gradient(circle at center, #112928 0%, #080f0e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .splash-container {
@@ -14,57 +14,65 @@ $background: #ffffff; // Putih Bersih (Profesional)
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   padding: 30px;
 }
 
 .logo-wrapper {
   text-align: center;
-  animation: scaleUp 1s ease-out; // Animasi skala yang halus
+  animation: scaleUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .icon-amigo {
   display: inline-flex;
-  margin-bottom: 15px;
-  animation: pulseColor 2s infinite; // Animasi denyut warna
+  margin-bottom: 24px;
+  animation: floatIcon 3s ease-in-out infinite;
 
   ion-icon {
-    font-size: 80px;
+    font-size: 96px;
     color: $amigo-primary;
+    filter: drop-shadow(0 0 20px $amigo-primary-glow);
   }
 }
 
 .brand-name {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
-  color: $text-dark;
-  letter-spacing: 6px; // Spasi huruf untuk kesan premium
+  color: #ffffff;
+  letter-spacing: 8px;
   margin: 0;
-  text-transform: uppercase; // Huruf besar semua
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ffffff, #a3eae7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
 }
 
 .tagline {
-  font-size: 1rem;
-  font-weight: 400;
-  color: $text-light;
-  margin-top: 5px;
-  letter-spacing: 1.5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #94a3b8;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  animation: fadeIn 1.5s ease-out forwards;
 }
 
 .loading-bar-container {
   position: absolute;
   bottom: 80px;
-  width: 150px;
-  height: 4px;
-  background: #f0f0f0;
-  border-radius: 2px;
+  width: 160px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
   overflow: hidden;
 
   .loading-bar {
     height: 100%;
     width: 0;
-    background: $amigo-primary;
-    border-radius: 2px;
-    animation: loadingAnimate 2.5s ease-out forwards; // Animasi loading
+    background: linear-gradient(to right, $amigo-primary, #1fd3ce);
+    border-radius: 10px;
+    box-shadow: 0 0 8px $amigo-primary;
+    animation: loadingAnimate 2.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 }
 
@@ -73,7 +81,7 @@ $background: #ffffff; // Putih Bersih (Profesional)
 @keyframes scaleUp {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.85);
   }
   to {
     opacity: 1;
@@ -81,13 +89,20 @@ $background: #ffffff; // Putih Bersih (Profesional)
   }
 }
 
-@keyframes pulseColor {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+@keyframes floatIcon {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
 }
 
 @keyframes loadingAnimate {
   0% { width: 0%; }
+  30% { width: 40%; }
+  70% { width: 85%; }
   100% { width: 100%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

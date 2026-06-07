@@ -1,15 +1,58 @@
 // For information on how to create your own theme, please refer to:
 // https://ionicframework.com/docs/theming/
 :root {
-  /** Primary Amigo Theme **/
+  /** Primary Amigo Theme (Teal/Emerald Accent) **/
   --ion-color-primary: #0abab5; 
   --ion-color-primary-rgb: 10, 186, 181;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #099b96;
+  --ion-color-primary-tint: #1fd3ce;
   
-  /** Latar Belakang Putih Bersih **/
+  /** Secondary Theme (Indigo/Purple Accent for modern feel) **/
+  --ion-color-secondary: #6366f1;
+  --ion-color-secondary-rgb: 99, 102, 241;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #575ad8;
+  --ion-color-secondary-tint: #7375f2;
+
+  /** Tertiary Theme (Warm Amber Accent) **/
+  --ion-color-tertiary: #ff9f1c;
+  --ion-color-tertiary-rgb: 255, 159, 28;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #e08c19;
+  --ion-color-tertiary-tint: #ffa933;
+
+  /** Success, Warning, Danger (Emerald, Amber, Rose) **/
+  --ion-color-success: #10b981;
+  --ion-color-success-rgb: 16, 185, 129;
+  --ion-color-warning: #f59e0b;
+  --ion-color-warning-rgb: 245, 158, 11;
+  --ion-color-danger: #ef4444;
+  --ion-color-danger-rgb: 239, 68, 68;
+
+  /** Grays & Neutrals **/
+  --ion-color-light: #f8fafc;
+  --ion-color-light-rgb: 248, 250, 252;
+  --ion-color-medium: #64748b;
+  --ion-color-medium-rgb: 100, 116, 139;
+  --ion-color-dark: #0f172a;
+  --ion-color-dark-rgb: 15, 23, 42;
+  
+  /** Clean Backgrounds **/
   --ion-background-color: #ffffff; 
   --ion-background-color-rgb: 255, 255, 255;
+  --ion-text-color: #1e293b;
+  --ion-text-color-rgb: 30, 41, 59;
 
-  /** Warna Teks Gelap agar Terbaca **/
-  --ion-text-color: #333333;
-  --ion-text-color-rgb: 51, 51, 51;
+  /** Premium UI Tokens **/
+  --amigo-gradient-primary: linear-gradient(135deg, #0abab5 0%, #008080 100%);
+  --amigo-gradient-secondary: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  --amigo-gradient-dark: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --amigo-card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.04), 0 8px 16px -6px rgba(15, 23, 42, 0.04);
+  --amigo-input-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.02);
+  --amigo-border-radius-lg: 20px;
+  --amigo-border-radius-md: 14px;
 }

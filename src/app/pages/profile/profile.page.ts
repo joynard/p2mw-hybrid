@@ -9,7 +9,7 @@ import {
 import { addIcons } from 'ionicons';
 import { 
   personOutline, briefcaseOutline, notificationsOutline, 
-  helpCircleOutline, logOutOutline
+  helpCircleOutline, logOutOutline, checkmarkCircle
 } from 'ionicons/icons';
 
 @Component({
@@ -27,7 +27,7 @@ export class ProfilePage implements OnInit {
   constructor(private router: Router) {
     addIcons({ 
       personOutline, briefcaseOutline, notificationsOutline, 
-      helpCircleOutline, logOutOutline
+      helpCircleOutline, logOutOutline, checkmarkCircle
     });
   }
 
