@@ -61,17 +61,12 @@ Ensure you have [Node.js](https://nodejs.org/) and [Ionic CLI](https://ionicfram
 ## 📱 User Interface (Screenshots)
 
 Here are some user interface (UI) screenshots of the JASTRIP application. You can add the image links below:
-<img width="589" height="1257" alt="image" src="https://github.com/user-attachments/assets/1783243a-a475-4ad8-85b5-13484cb1d8b4" />
-<img width="586" height="1265" alt="image" src="https://github.com/user-attachments/assets/8d9bd5bc-af02-41ae-97f3-1e6a45d27fa0" />
-<img width="588" height="1263" alt="image" src="https://github.com/user-attachments/assets/9b476add-1694-4283-ad98-e3b16b3a9cfa" />
-<img width="597" height="1274" alt="image" src="https://github.com/user-attachments/assets/c1472d69-26ef-4690-8e8f-a1e53a104c6b" />
-<img width="578" height="1266" alt="image" src="https://github.com/user-attachments/assets/ff086662-72db-4291-a846-6c672746ea27" />
-<img width="582" height="1262" alt="image" src="https://github.com/user-attachments/assets/af8ee706-589d-40aa-a10d-ead6768e02df" />
-
-
-
-
-
+<img width="280" alt="Splash Screen" src="https://github.com/user-attachments/assets/1783243a-a475-4ad8-85b5-13484cb1d8b4" />
+<img width="280" alt="Login" src="https://github.com/user-attachments/assets/8d9bd5bc-af02-41ae-97f3-1e6a45d27fa0" />
+<img width="280" alt="Register" src="https://github.com/user-attachments/assets/9b476add-1694-4283-ad98-e3b16b3a9cfa" />
+<img width="280" alt="Home Dashboard" src="https://github.com/user-attachments/assets/c1472d69-26ef-4690-8e8f-a1e53a104c6b" />
+<img width="280" alt="Jastip/Guide List" src="https://github.com/user-attachments/assets/ff086662-72db-4291-a846-6c672746ea27" />
+<img width="280" alt="Profile" src="https://github.com/user-attachments/assets/af8ee706-589d-40aa-a10d-ead6768e02df" />
 
 ## 📈 P2MW Context
 
