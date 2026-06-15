@@ -30,7 +30,7 @@ src/app/
 └── assets/         # Images, icons, and static resources
 ```
 
-## 🛠️ Getting Started
+## Getting Started
 
 Ensure you have [Node.js](https://nodejs.org/) and [Ionic CLI](https://ionicframework.com/docs/intro/cli) installed on your system.
 
